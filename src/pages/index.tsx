@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
 
+import { Container } from "./home.styles";
+
 const Home: NextPage = () => {
-  return <div>Hello world</div>;
+  return <Container>Hello world</Container>;
 };
 
 export default Home;
