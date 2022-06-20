@@ -11,7 +11,7 @@
     "commit": "git-cz",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
-    "test:staged": "npm test -- --findRelatedTests",
+    "test:staged": "npm test -- --onlyChanged",
     "test:ci": "npm test -- --coverage"
   },
   "dependencies": {
