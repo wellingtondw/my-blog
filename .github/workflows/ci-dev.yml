@@ -1,0 +1,30 @@
+name: CI DEV
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Check Linting
+        run: yarn lint
+
+      - name: Check Tests
+        run: yarn test:ci
+
+      - name: Check Commit Message
+        run: wagoid/commitlint-github-action@v5
