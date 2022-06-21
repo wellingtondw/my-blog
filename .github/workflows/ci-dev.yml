@@ -1,16 +1,21 @@
 name: CI DEV
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -27,4 +32,7 @@ jobs:
         run: yarn test:ci
 
       - name: Check Commit Message
-        run: wagoid/commitlint-github-action@v5
+        uses: wagoid/commitlint-github-action@v5
+        with:
+          configFile: "../../commitlint.config.js"
+          token: ${{ secrets.GITHUB_TOKEN }}
