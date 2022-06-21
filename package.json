@@ -9,10 +9,11 @@
     "lint": "next lint",
     "prepare": "husky install",
     "commit": "git-cz",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --onlyChanged",
-    "test:ci": "npm test -- --coverage",
+    "test:ci": "npm test -- --coverage --runInBand",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
