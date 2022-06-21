@@ -1,0 +1,38 @@
+name: CI DEV
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Check Linting
+        run: yarn lint
+
+      - name: Check Tests
+        run: yarn test:ci
+
+      - name: Check Commit Message
+        uses: wagoid/commitlint-github-action@v5
+        with:
+          configFile: "../../commitlint.config.js"
+          token: ${{ secrets.GITHUB_TOKEN }}
