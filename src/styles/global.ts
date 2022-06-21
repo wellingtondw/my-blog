@@ -1,6 +1,10 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle, css, DefaultTheme } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+type GlobalStylesProps = {
+  removeBg?: boolean;
+} & DefaultTheme;
+
+const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
   @font-face {
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
@@ -41,13 +45,18 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  ${({ theme }) => css`
+  ${({ theme, removeBg }) => css`
     html {
       font-size: 62.5%;
     }
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
+
+      ${!removeBg &&
+      css`
+        background-color: ${theme.colors.white};
+      `}
     }
   `}
 `;
