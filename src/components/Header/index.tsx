@@ -4,7 +4,8 @@ import Image from "next/image";
 import { Menu as MenuIcon } from "@styled-icons/material";
 import { Close as CloseIcon } from "@styled-icons/material";
 
-import MediaMatch from "components/MediaMatch";
+import { MediaMatch } from "components/MediaMatch";
+import { Container } from "components/Container";
 
 import * as S from "./styles";
 
@@ -21,7 +22,7 @@ export const Header = ({ onClickBuy }: HeaderProps) => {
 
   return (
     <S.Header>
-      <S.Container>
+      <Container>
         <S.Logo>
           Wo
           <span>.sk</span>
@@ -56,7 +57,7 @@ export const Header = ({ onClickBuy }: HeaderProps) => {
             </S.BuyButton>
           </S.Nav>
         </S.MenuFull>
-      </S.Container>
+      </Container>
     </S.Header>
   );
 };
