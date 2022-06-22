@@ -1,8 +1,8 @@
-import { createGlobalStyle, css, DefaultTheme } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 type GlobalStylesProps = {
   removeBg?: boolean;
-} & DefaultTheme;
+};
 
 const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
   @font-face {
