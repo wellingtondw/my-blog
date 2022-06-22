@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Should be able to render correctly 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.c3 {
+  display: none;
+}
+
+.c1 {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  width: 100%;
+  padding: 1.6rem 0;
+  box-shadow: 4px 6px 13px rgba(215,215,215,0.25);
+}
+
+.c0 > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  font-size: 3.2rem;
+  color: #2B2C34;
+  font-weight: 600;
+}
+
+.c2 span {
+  font-size: 1.6rem;
+  color: #6246EA;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  margin-right: 2.4rem;
+  font-size: 1.6rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #2B2C34;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  position: relative;
+  border-bottom: 1px dashed transparent;
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+  font-weight: 600;
+}
+
+.c9:hover {
+  border-color: #6246EA;
+  color: #424450;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #6246EA;
+  color: #FFFFFE;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.6rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  border-radius: 0.4rem;
+}
+
+.c10:hover {
+  background-color: #5a3de9;
+}
+
+.c11 {
+  margin-right: 0.8rem;
+}
+
+.c6 svg {
+  display: none;
+}
+
+.c4 {
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (max-width:1170px) {
+  .c1 {
+    padding: 0 1.6rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c8 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media (max-width:768px) {
+  .c9 {
+    margin-right: 0;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    background-color: #FFFFFE;
+    left: 0;
+    top: 0;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
+  }
+
+  .c6 svg {
+    display: block;
+    position: absolute;
+    right: 0.8rem;
+    top: 0.8rem;
+  }
+
+  .c6 .c7 {
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    -webkit-transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+  }
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        Wo
+        <span>
+          .sk
+        </span>
+      </span>
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="Open Menu"
+            class="c5"
+            fill="currentColor"
+            focusable="false"
+            height="32"
+            viewBox="0 0 24 24"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+        </div>
+      </div>
+      <nav
+        class="c6"
+      >
+        <div
+          class="c4"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="Close Menu"
+            class="c5"
+            fill="currentColor"
+            focusable="false"
+            height="32"
+            viewBox="0 0 24 24"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c7 c8"
+        >
+          <a
+            class="c9"
+            href="#"
+          >
+            Home
+          </a>
+          <a
+            class="c9"
+            href="#"
+          >
+            Category
+          </a>
+          <a
+            class="c9"
+            href="#"
+          >
+            Blog
+          </a>
+          <button
+            class="c10"
+          >
+            <div
+              class="c11"
+            >
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2720%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="Coffee Icon"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </div>
+            Buy Me A Coffee
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
+`;

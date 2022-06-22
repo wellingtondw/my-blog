@@ -9,6 +9,9 @@ module.exports = {
     "!<rootDir>/.next/**",
     "!<rootDir>/*.config.js",
     "!<rootDir>/coverage/**",
+    "!<rootDir>/src/**/stories.tsx",
+    "!<rootDir>/src/styles/**/*.ts",
+    "!<rootDir>/src/**/mock.ts",
   ],
   moduleNameMapper: {
     "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
@@ -26,4 +29,5 @@ module.exports = {
     "/node_modules/",
     "^.+\\.module\\.(css|sass|scss)$",
   ],
+  modulePaths: ["<rootDir>/src/", "<rootDir>/.jest"],
 };
