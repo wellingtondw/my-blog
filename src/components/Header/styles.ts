@@ -92,6 +92,7 @@ export const BuyButton = styled.button`
     cursor: pointer;
     border: none;
     transition: background-color ${theme.transition.fast};
+    border-radius: ${theme.border.radius};
 
     &:hover {
       background-color: ${darken(0.02, theme.colors.primary)};
