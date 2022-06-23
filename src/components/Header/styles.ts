@@ -3,17 +3,6 @@ import styled, { css } from "styled-components";
 import { darken, lighten } from "polished";
 import media from "styled-media-query";
 
-export const Container = styled.div`
-  ${({ theme }) => css`
-    max-width: ${theme.grid.container};
-    margin: 0 auto;
-
-    ${media.lessThan("large")`
-      padding: 0 ${theme.spacings.xsmall};
-    `}
-  `}
-`;
-
 export const Header = styled.header`
   ${({ theme }) => css`
     width: 100%;
@@ -126,6 +115,7 @@ export const MenuFull = styled.nav<MenuFullProps>`
       align-items: center;
       justify-content: center;
       transition: opacity ${theme.transition.fast};
+      z-index: ${theme.layers.alwaysOnTop};
 
       svg {
         display: block;
