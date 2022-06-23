@@ -115,6 +115,7 @@ export const MenuFull = styled.nav<MenuFullProps>`
       align-items: center;
       justify-content: center;
       transition: opacity ${theme.transition.fast};
+      z-index: ${theme.layers.alwaysOnTop};
 
       svg {
         display: block;
